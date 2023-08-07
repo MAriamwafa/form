@@ -1,0 +1,195 @@
+*
+{margin: 0;
+padding: 0;
+}
+.row
+{
+    width: 80%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    background-color:#112b3c;
+    margin: auto;
+    padding: 30px;
+    margin-top: 1px;
+    
+    
+}
+.col-5
+{
+    width: 30%;
+    color: #fff;
+    border-right:1px solid #fff;
+    
+}
+
+.col-5 hr
+{
+    margin-top: 9px;
+    width: 90%;
+}
+
+.col-7
+{
+    width: 50%;
+    color: #fff;
+    text-align: center;
+}
+.row .col-5 h1
+{
+    font-size: 40px;
+    margin: 13px;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+}
+.row .col-5 ul li
+{
+    list-style: none;
+    list-style-type:square ;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    word-spacing: 4px;
+    padding: 10px;
+}
+.row .col-5 #embeded
+{
+    height: 250px;
+}
+.row .col-7 label
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    word-spacing: 7PX;
+    display: inline-block;
+    padding: 18px 0px;
+   
+}
+.row .col-7 input
+{
+    background: transparent;
+    border: none;
+    border-bottom:1px solid #fff;
+    width: 80%;
+    font-size: 20px;
+    padding: 10px;
+    margin: 13px 0px;
+    color: #fff;
+}
+.row .col-7 textarea
+{
+    background: transparent;
+    border: none;
+    border-bottom:1px solid #fff;
+    font-size: 20px;
+    color: #FFF;
+}
+.row .col-7 #save
+{
+    width: 40%;
+    padding: 20px;
+    background: transparent;
+    color: #fff;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.row .col-5 #embeded #h1
+{
+    color:#FFF;
+}
+.row .col-5 #embeded #ul li
+{
+    list-style: none;
+    list-style-type:square ;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    word-spacing: 4px;
+    padding: 10px;
+    color: red;
+}
+.row .col-7 .span
+{
+    color: red;
+}
+@media (max-width:768px) {
+    .row
+{
+    width: 100%;
+    padding: 10px 0px;
+}
+.col-5
+{
+    width: 40%;
+    
+}
+    .row .col-5 h1 {
+    font-size: 18px;
+    margin: 8px 0px;
+    letter-spacing: 0px;
+   
+}
+     
+
+.row .col-5 ul li
+{
+    font-size: 12px;
+    word-spacing: 0px;
+    padding: 10px;
+}
+.col-7
+{
+    width: 51%;
+    
+}
+.row .col-7 label
+{
+    
+    font-size: 13px;
+    word-spacing: 0PX;
+    padding: 8px 0px;
+   
+}
+.row .col-7 input
+{
+    
+    width: 60%;
+    font-size: 10px;
+    padding: 5px;
+    margin: 7px 0px;
+   
+}
+.row .col-7 textarea
+{
+    width: 62%;
+    font-size: 10px;
+    
+}
+.row .col-7 #save
+{
+    width: 30%;
+    padding: 10px;
+    
+    font-size: 12px;
+    margin-top: 5px;
+}
+.row .col-5 #embeded
+{
+    height: 248px;
+}
+.row .col-5 #embeded #h1
+{
+    font-size: 18px;
+}
+.row .col-5 #embeded #ul li
+{
+    font-size: 12px;
+    
+    word-spacing: 0px;
+    padding: 5px;
+    color: red;
+}
+.row .col-7 .span
+{
+    font-size: 10px;
+    padding: 5px 0px;
+}
+}

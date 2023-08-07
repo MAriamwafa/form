@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+              <h1>Instructions :</h1>
+              <ul>
+                <li>First name must be string and less then or equal 10 characters.</li>
+                <li>Last name must be string and less then or equal 10 characters.</li>
+                <li>Password must be numbers and less then or equal 20 characters.</li>
+                <li>You must add valid email.</li>
+                <li>About you must be string and greater than 30 characters and less than 200 characters.</li>
+                <hr>
+              </ul>
+              <div id="embeded">
+                <h1 id="h1"></h1>
+                <ul id="ul">
+                   
+                  </ul>
+              </div>
+            </div>
+            <div class="col-7">
+             
+                <label>First Name :</label><br>
+                <input id="First_Name" type="text" placeholder="Enter Your First name"><br><span class="span"></span><br>
+                <label>Last Name :</label><br>
+                <input id="Last_Name"  type="text" placeholder="Enter Your Last name"><br><span class="span"></span><br>
+                <label>Password :</label><br>
+                <input id="password" type="text" placeholder="Enter Your Password"><br><span class="span"></span><br>
+                <label>Email :</label><br>
+                <input id="email" type="text" placeholder="Enter Your Email"><br><span class="span"></span><br>
+                <label>About you :</label><br>
+                <textarea id="area" cols="43" rows="9" placeholder="About you"></textarea><br><span class="span"></span><br>
+                <button id="save" type="submit">Save</button>
+            
+            </div>
+        </row>
+    </div>
+    <script>
+        
+        save.addEventListener("click",function()
+        {
+            ul.innerHTML = ''
+
+            let First=First_Name.value
+            let Last=Last_Name.value
+            let pass=password.value
+            let mail=email.value
+            let about=area.value
+            var a=[ ];
+            function MAr()
+        {
+            if(a.includes('First name must be string and less then or equal 10 characters.'))
+                {
+                   a.pop('First name must be string and less then or equal 10 characters.'); 
+                   console.log(1234567) 
+                }
+               else
+                {
+                   a.push('First name must be string and less then or equal 10 characters.');
+                }
+        }
+            if (First.length <= 10 && First.length > 1)
+            {
+                First=First.trim()
+                First_Name.style.borderColor="green";
+                a.pop('First name must be string and less then or equal 10 characters.');
+                document.getElementsByClassName("span")[0].textContent='           '
+           }
+           else
+           {
+            First_Name.style.borderColor="red";
+            h1.textContent= "Errors :";
+            document.getElementsByClassName("span")[0].textContent='First name must be string and less then or equal 10 characters.'
+            a.push('First name must be string and less then or equal 10 characters.');
+            ul.innerHTML+=`<li>${a}</li>`
+            a= []
+           }
+           if (Last.length <= 10 && Last.length > 1)
+            {
+                Last=Last.trim()
+                Last_Name.style.borderColor="green";
+                a.pop('Last name must be string and less then or equal 10 characters.');
+                document.getElementsByClassName("span")[1].textContent='           '
+                
+           }
+           else
+           {
+            a= []
+            Last_Name.style.borderColor="red";
+            h1.textContent= "Errors :";
+            a.push('Last name must be string and less then or equal 10 characters.');
+            document.getElementsByClassName("span")[1].textContent='Last name must be string and less then or equal 10 characters.'
+            ul.innerHTML+=`<li>${a}</li>`
+           }
+           if (pass.length <= 20 && pass.length > 1)
+            {
+                pass=pass.trim()
+                password.style.borderColor="green";
+                a.pop('Password must be numbers and less then or equal 20 characters.');
+                document.getElementsByClassName("span")[2].textContent='           '
+                
+           }
+           else
+           {
+            a= []
+            password.style.borderColor="red";
+            h1.textContent= "Errors :";
+            a.push('Password must be numbers and less then or equal 20 characters.');
+            document.getElementsByClassName("span")[2].textContent='Password must be numbers and less then or equal 20 characters.'
+            ul.innerHTML+=`<li>${a}</li>`
+           }
+           if (mail.includes("@"))
+            {
+                mail=mail.trim()
+                email.style.borderColor="green";
+                a.pop('You must add valid email.');
+                document.getElementsByClassName("span")[3].textContent='           '
+                
+           }
+           else
+           {
+            a= []
+            email.style.borderColor="red";
+            h1.textContent= "Errors :";
+            a.push('You must add valid email.');
+            document.getElementsByClassName("span")[3].textContent='You must add valid email.'
+            ul.innerHTML+=`<li>${a}</li>`
+           }
+           if (about.length > 30 && about.length < 200)
+            {
+                about=about.trim()
+                area.style.borderColor="green";
+                a.pop('About you must be string and greater than 30 characters and less than 200 characters.');
+                document.getElementsByClassName("span")[4].textContent='           '
+                
+           }
+           else
+           {
+            a= [];
+            area.style.borderColor="red";
+            h1.textContent= "Errors :";
+            a.push('About you must be string and greater than 30 characters and less than 200 characters.');
+            document.getElementsByClassName("span")[4].textContent='About you must be string and greater than 30 characters and less than 200 characters.'
+            ul.innerHTML+=`<li>${a}</li>`
+           }
+        })
+        
+    </script>
+</body>
+</html>
